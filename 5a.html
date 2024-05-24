@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Name</title>
+  </head>
+  <body>
+
+    <h1>Calculate Order</h1>
+
+    <p>My Order</p>
+
+    <p id="orderdisplay">No order yet</p>
+
+    <button onclick="
+    cost = coffee + (2* bagel) + soup;
+    tax = cost * taxrate;
+    console.log(`Cost of Food: $${cost}`);
+document.getElementById('orderdisplay').innerHTML = `\n 1 cup of coffee,\n 2 bagels \n 1 soup \n \n Cost of Food: $${cost} \n Tax:  $${tax}  \n \n  Total Cost:  $${ cost + tax}`;
+
+    ">Display order</button>
+
+    <script>
+let  name = "Olutayo";
+console.log(typeof name);
+console.log(`My name is: ${name}`);
+const coffee = 5;
+const bagel = 3;
+const soup = 9;
+let cost = 0;
+const taxrate = 0.1;
+let tax = 0;
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons</title>
+    <style>
+
+      .addcart-button{
+        background-color: yellow;
+        color: black;
+        border: 1px solid black;
+        }
+      .buynow-button{
+        background-color: orange;
+        color: black;
+        border: 1px solid black;
+      }
+      #btn-span {
+        background-color: blue;
+        border: none;
+        padding: 10px;
+        width: fit-content;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Exercise</h1>
+    <p>Adults Plain Cotton T-Shirt</p>
+    <p id="display-price">Price:</p>
+
+
+   <div id="btn-span"> <button class="addcart-button" onclick=" document.getElementById('display-price').innerHTML += `$${799/100} \n`;">Add to cart</button> <button class="buynow-button">Buy now</button></div>
+
+  
+
+    <script>
+      console.log("Welcome");
+
+
+
+    </script>
+  </body>
+</html>

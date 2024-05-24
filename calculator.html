@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Calculator</title>
+  </head>
+  <body>
+
+    <h1>Calculator</h1>
+
+
+
+<button onclick="
+//operator is use to check if the operator button has been pressed at least once
+if (operator)
+store2 += 1; 
+else 
+store1 += 1;
+console.log('1');
+">1</button>
+
+<button onclick="
+if (operator)
+store2 += 2; 
+else 
+store1 += 2;
+
+console.log('2');
+">2</button>
+
+<button onclick="
+if (operator)
+store2 += 3; 
+else 
+store1 += 3;
+console.log('3');
+">3</button>
+
+<button onclick="
+if (operator)
+store2 += 4; 
+else 
+store1 += 4;
+console.log('4');
+">4</button>
+
+<button onclick="
+if (operator)
+store2 += 5; 
+else 
+store1 += 5;
+console.log('5');
+">5</button>
+
+<button onclick="
+if (operator)
+store2 += 6; 
+else 
+store1 += 6;
+console.log('6');
+">6</button>
+
+<button onclick="
+if (operator)
+store2 += 7; 
+else 
+store1 += 7;
+console.log('7');
+">7</button>
+
+<button onclick="
+if (operator)
+store2 += 8; 
+else 
+store1 += 8;
+console.log('8');
+">8</button>
+
+<button onclick="
+if (operator)
+store2 += 9; 
+else 
+store1 += 9;
+console.log('9');
+">9</button>
+
+<button onclick="
+if (operator)
+store2 += 0; 
+else 
+store1 += 0;
+console.log('0');
+">0</button>
+
+<button onclick="
+operator = true; //takes account of the fact that the operator button has been pressed
+temp1 = parseInt(store1); //stores the content of the screen into  a temporary variable
+add = true;
+subtr = false;
+mult = false;
+divi = false;
+console.log('+');
+">+</button>
+
+<button onclick="
+operator = true; //takes account of the fact that the operator button has been pressed
+temp1 = parseInt(store1); //stores the content of the screen into  a temporary variable
+add = false;
+subtr = true;
+mult = false;
+divi = false;
+
+console.log('-');
+">-</button>
+
+<button onclick="
+operator = true; //takes account of the fact that the operator button has been pressed
+temp1 = parseInt(store1); //stores the content of the screen into  a temporary variable
+add = false;
+subtr = false;
+mult = true;
+divi = false;
+console.log('*');
+">*</button>
+
+<button onclick="
+operator = true; //takes account of the fact that the operator button has been pressed
+temp1 = parseInt(store1); //stores the content of the screen into  a temporary variable
+add = false;
+subtr = false;
+mult = false;
+divi = true;
+console.log('/');
+">/</button>
+
+
+
+<button onclick="
+temp2 = parseInt(store2);
+if (add)
+result = temp1 + temp2;
+else if (subtr)
+result = temp1 - temp2;
+else if (mult)
+result = temp1 * temp2;
+else if (divi)
+result = temp1 / temp2;
+else
+result = 'invalid operation';
+
+console.log(`result is: ${result}`);
+//Reset all variables to default after result is calculated.
+temp1 = 0;
+temp2 = 0;
+store1 = '';
+store2 = '';
+result = 0;
+operator = false;
+">=</button>
+
+    <script>
+      //initialize the values
+        let  temp1 = 0;
+        let temp2 = 0;
+        var store1 ="";
+        var store2 ="";
+        let operator = false;
+        let result = 0;
+          let add = false;
+          let subtr = false;
+          let mult = false;
+          let divi = false;
+
+
+    </script>
+  </body>
+</html>
