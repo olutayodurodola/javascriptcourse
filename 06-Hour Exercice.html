@@ -23,14 +23,36 @@
 
 
         const isHoliday = true;
-        let age = 55;
+        let age = 5;
 
-        if (((age <= 6) || (age >= 65)) && isHoliday)
+        if (((age <= 6) || (age >= 65)) && !isHoliday)
         console.log(`You qualify for a Discount!`);
         else 
         console.log(`Sorry! You do not qualify for a Discount!`);
 
-        
+        let randnum = Math.random();
+        let result = "";
+        let guess = "";
+
+        if (randnum < 0.5)
+         { console.log(`Heads`);
+          result = "heads";
+        }
+        else
+         { console.log(`tails`);
+          result = "tails";
+         }
+
+        console.log(`Guess whether heads or tails?`);
+        guess = prompt(`Guess whether 'heads' or 'tails'?`);
+          if (guess === result) 
+          {
+            console.log(`You Win`);
+          }
+          else
+          {
+            console.log(`You Lose!`);
+          }
 
 
     </script>
